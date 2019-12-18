@@ -12,14 +12,14 @@ import { CartService } from '../cart.service';
 export class ProductDetailsComponent implements OnInit {
   addToCart(product) {
     window.alert('Your product has been added to the cart!');
-    this.cartservice.addToCart(product);
+    this.cartService.addToCart(product);
   }
 
   product;
 
   constructor(
     private route: ActivatedRoute,
-    private cartservice: CartService
+    private cartService: CartService
   ) { }
 
   ngOnInit() {
